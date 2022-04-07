@@ -2,4 +2,4 @@
 
 WageComputation computation = new WageComputation();
 computation.EmployeeAttendence();
-computation.CalculateEmpWage();
+computation.CalculatePartTimeWage();
