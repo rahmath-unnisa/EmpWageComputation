@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageComputationn
 {
-    public class WageComputation
+    public class EmployeeWage
     {
         const int IS_PRESENT = 0, IS_PART_TIME = 1, IS_FULL_TIME = 2, EMP_RATE_PER_HOUR = 20, NUM_OF_WORKING_DAYS = 2,
-               MAX_HRS_IN_MONTH = 10;
+            MAX_HRS_IN_MONTH = 10;
 
         public void EmployeeAttendence()
         {
@@ -53,7 +53,7 @@ namespace EmployeeWageComputationn
             
 
         }
-       
+  
     }
-
 }
+
