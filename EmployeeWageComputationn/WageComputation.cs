@@ -8,8 +8,7 @@ namespace EmployeeWageComputationn
 {
     public class WageComputation
     {
-        const int IS_PRESENT = 0, IS_PART_TIME = 1, IS_FULL_TIME = 2, EMP_RATE_PER_HOUR = 20, NUM_OF_WORKING_DAYS = 2,
-               MAX_HRS_IN_MONTH = 10;
+        const int IS_PRESENT = 0, IS_PART_TIME = 1, IS_FULL_TIME = 2;
 
         public void EmployeeAttendence()
         {
@@ -21,7 +20,7 @@ namespace EmployeeWageComputationn
                 Console.WriteLine("Employee is Absent");
 
         }
-        public  void EmployeeWageMaxDays()
+        public  int Company(string company, int empRatePerHr, int NUM_OF_WORKING_DAYS, int MAX_HRS_IN_MONTH )
         {
             int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;
             while (totalEmpHrs <= MAX_HRS_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
@@ -41,19 +40,14 @@ namespace EmployeeWageComputationn
                     default:
                         empHrs = 0;
                         break;
-
                 }
-
                 totalEmpHrs += empHrs;
                 Console.WriteLine("Day#:" + totalWorkingDays + "Emp Hrs:" + empHrs);
-
             }
-            int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
-            Console.WriteLine("Total Emp Wage:" + totalEmpWage);
-            
-
+                int totalEmpWage = totalEmpHrs * empRatePerHr;
+                Console.WriteLine("Total Emp Wage for company:" + company + " is :" + totalEmpWage);
+                return totalEmpHrs;
         }
-       
     }
 
 }

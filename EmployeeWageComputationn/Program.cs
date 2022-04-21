@@ -1,5 +1,7 @@
 ﻿using EmployeeWageComputationn;
 
-EmployeeWage computation = new EmployeeWage();
+WageComputation computation = new WageComputation();
 computation.EmployeeAttendence();
-computation.EmployeeWageMaxDays();
+computation.Company("Samsung",20,4,20);
+computation.Company("Reliance", 10, 4, 20);
+computation.Company("Airtel",30, 4, 20);
