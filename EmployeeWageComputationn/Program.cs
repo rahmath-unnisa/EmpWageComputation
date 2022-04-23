@@ -1,7 +1,11 @@
 ﻿using EmployeeWageComputationn;
 
-WageComputation computation = new WageComputation();
-computation.EmployeeAttendence();
-computation.Company("Samsung",20,4,20);
-computation.Company("Reliance", 10, 4, 20);
-computation.Company("Airtel",30, 4, 20);
+EmployeeWageUsingClass samsung = new EmployeeWageUsingClass("Samsung", 20, 5, 10);
+EmployeeWageUsingClass reliance = new EmployeeWageUsingClass("Reliance", 10, 4, 10);
+EmployeeWageUsingClass airtel = new EmployeeWageUsingClass("Airtel", 30, 5, 20);
+samsung.ComputeEmployeeWage();
+Console.WriteLine(samsung.displaySalary() +"\n");
+reliance.ComputeEmployeeWage();
+Console.WriteLine(reliance.displaySalary()+ "\n");
+airtel.ComputeEmployeeWage();
+Console.WriteLine(airtel.displaySalary()+ "\n");
